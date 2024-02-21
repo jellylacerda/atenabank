@@ -145,20 +145,20 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .botao-cred{
-    font-size: 30px;
-    color: #000;
     align-items: center;
     display: flex;
-    background-color:var(--link);
-    height: 10px;
     padding: 6%;
     border-radius: 2%;
-    margin: 5% 0% 3% 3%;
     cursor: pointer;
-    font-weight: 400;
+}
+
+.botao-cred img{
+    width: 400px;
+    height: auto;
 }
 
 .botao-cred:hover{
@@ -167,7 +167,7 @@ header{
 
 .credito{
     align-items: center;
-    margin: 5% 10% 0% 5%;
+    margin: 0% 10% 0% 5%;
 }
 .credito h1{
     font-size: 40px;
