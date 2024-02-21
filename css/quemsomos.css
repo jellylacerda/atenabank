@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --fundo: #24262B;
+    --link: #11A8FD;
+    --linha: #7F8489;
+    --branco: #FFFFFF;
+    --selecionado: #005EA3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--fundo);
+}
+
+/* NAVEGAÇÃO */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+}
+
+.logo img{
+    width: 300px;
+}
+
+.navbar a{
+    color: var(--branco);
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: var(--link);
+}
+
+/* PRINCIPAL */
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.person{
+    padding-top: 5px;
+    max-width: 400px;
+}
+
+h2{
+    color: var(--selecionado);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+span{
+    color: var(--branco);
+    font-weight: 200;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+    width: 100%;
+    color: var(--branco);
+}
+
+.texto{
+    max-width: 50%;
+}
+
+.nome a{
+    color: var(--branco);
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+    
+    header, footer, .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar{
+        padding: 2% 0;
+    }
+
+    .nome{
+        padding-top: 2%;
+    }
+
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
